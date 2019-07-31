@@ -39,6 +39,7 @@
             })
             window.cinput.addEventListener('compositionend', function () {
                 window.lock = false;
+                trans('end');
             })
 
             window.cinput.oninput = function () {
