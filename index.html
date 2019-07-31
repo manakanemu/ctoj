@@ -1,6 +1,75 @@
-<html>
-<head></head>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <script>
+    </script>
+    <style>
+        html{
+            width: 100%;
+        }
+        body{
+            width: 100%;
+        }
+
+        #globalContainer {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .title-box {
+            margin-top: 100px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+
+        }
+
+        .input-box {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        input {
+            width: 500px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid #e5e5e5;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        input:hover {
+            border: 1px solid gray
+        }
+    </style>
+</head>
+
+
 <body>
-<span>welcome</span>
+    <div id='globalContainer'>
+        <div class='title-box'>
+            <h1>中日汉字转换</h1>
+        </div>
+
+        <div class='input-box'>
+            <div>
+                <input type="text" placeholder="请输入中文">
+            </div>
+            <div>
+                <input type="text" placeholder="请输入日文">
+
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
